@@ -16,7 +16,7 @@
             <div class="col bg-primary">
                 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Sistema de votação</a>
+                        <a class="navbar-brand" href="#">SISTEMA DE VOTAÇÃO</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -36,9 +36,62 @@
                 &nbsp;
             </div>
         </div>
+        <div class="row">
+            <div class="col-1">
+                &nbsp;
+            </div>
+            <div class="col bg-white">
+                &nbsp;
+            </div>
+            <div class="col-1">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                &nbsp;
+            </div>
+            <div class="col bg-white">
+                <p class="text-start fs-5"><b>Qual é o seu filme favorito?</b></p>
+                <p class="text-start fs-6">Vote no seu filme favorito dos Vingadores</p>
+                <p>
+                    <form method= "POST" action= "resultados.php">
+                        <div class="form-check mb-3 text-start">
+                            <input class="form-check-input" type="radio" name="movie" id="Os Vingadores – The Avengers (2012)">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Os Vingadores – The Avengers (2012)
+                            </label>
+                        </div>
+                        <div class="form-check mb-3 text-start">
+                            <input class="form-check-input" type="radio" name="movie" id="Vingadores: Era de Ultron (2015)">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Vingadores: Era de Ultron (2015)
+                            </label>
+                        </div>
+                        <div class="form-check mb-3 text-start">
+                            <input class="form-check-input" type="radio" name="movie" id="Vingadores: Guerra Infinita (2018)">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Vingadores: Guerra Infinita (2018)
+                            </label>
+                        </div>
+                        <div class="form-check mb-3 text-start">
+                            <input class="form-check-input" type="radio" name="movie" id="Vingadores: Ultimato (2019)">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Vingadores: Ultimato (2019)
+                            </label>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <input type="submit">
+                            <label class="btb btn-primary" for="btn-check"></label>
+                        </div>
+                    </form>
+                </p>
+            </div>
+            <div class="col-1">
+                &nbsp;
+            </div>
+        </div>
+
     </div>
-
-
-
   </body>
 </html>

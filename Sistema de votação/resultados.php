@@ -49,12 +49,10 @@
         </div>
         <div class="row">
             <div class="col-1">
-                &nbsp;
             </div>
             <div class="col bg-white">
                 <p class="text-start fs-5"><b>Resultado da votação:</b></p>
-                <p class="text-start fs-6">Número de votos que cada filme recebeu.</p>
-                <p class="text-start fs-5>">
+                <p class="text-start fs-6">
                 
                 <?php     
                     
@@ -86,14 +84,13 @@
 
                     //Exibe os resultados
                     foreach ($option as $movie => $option){
-                        echo "<p>$movie: $option votos</p>";
+                        echo "<p class= text-start fs-6>$movie: $option votos</p>";
                     }
 
                 ?>
                 </p>
             </div>
             <div class="col-1">
-                &nbsp;
             </div>
         </div>
     </div>

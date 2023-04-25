@@ -1,40 +1,3 @@
-<?php
-
-    //Verifica o formulário e se foi enviado
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-        //Verifica se a opção escolhida é valida
-        if (isset($_POST["movie"]) && in_array($_POST["movie"], ["Os Vingadores – The Avengers (2012)", "Vingadores: Era de Ultron (2015)", "Vingadores: Guerra Infinita (2018)", "Vingadores: Ultimato (2019)"])) {
-
-            //Lê o arquivo dos votos
-            $option = file_get_contents("option.txt");
-
-            //Converte o conteúdo do arquivo para um array
-            $option = json_decode($option, true);
-
-            //Incremenda o contador da opção escolhida
-            $option[$_POST["option"]] += 1;
-
-            //Salva o array no arquivo de votos
-            file_put_contents("option.txt", json_encode($option));
-        }
-    }
-
-    //Lendo os arquivos de votos
-    $option = file_get_contents("option.txt");
-
-    //Converte o conteúdo do arquivo para um array
-    $option = json_decode($option, true);
-
-    //Exibe os resultados 
-    echo "<h1>Resultados das votações: </h1>";
-
-    foreach ($option as $movie => $option){
-        echo "<p>$movie: $option votos</p>";
-    }
-
-?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -89,7 +52,45 @@
                 &nbsp;
             </div>
             <div class="col bg-white">
-                <p class="text-start fs-5"><b>Resultado da votação</b></p>
+                <p class="text-start fs-5"><b>Resultado da votação:</b></p>
+                <p class="text-start fs-6">Número de votos que cada filme recebeu.</p>
+                <p class="text-start fs-5>">
+                
+                <?php     
+                    
+                    //Verifica o formulário e se foi enviado
+                    if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+                        //Verifica se a opção escolhida é valida
+                        if (isset($_POST["movie"]) && in_array($_POST["movie"], ["Os Vingadores – The Avengers (2012)", "Vingadores: Era de Ultron (2015)", "Vingadores: Guerra Infinita (2018)", "Vingadores: Ultimato (2019)"])) {
+
+                            //Lê o arquivo dos votos
+                            $option = file_get_contents("option.txt");
+
+                            //Converte o conteúdo do arquivo para um array
+                            $option = json_decode($option, true);
+
+                            //Incremenda o contador da opção escolhida
+                            $option[$_POST["movie"]] += 1;
+
+                            //Salva o array no arquivo de votos
+                            file_put_contents("option.txt", json_encode($option));
+                        }
+                    }
+
+                    //Lendo os arquivos de votos
+                    $option = file_get_contents("option.txt");
+
+                    //Converte o conteúdo do arquivo para um array
+                    $option = json_decode($option, true);
+
+                    //Exibe os resultados
+                    foreach ($option as $movie => $option){
+                        echo "<p>$movie: $option votos</p>";
+                    }
+
+                ?>
+                </p>
             </div>
             <div class="col-1">
                 &nbsp;

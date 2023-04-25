@@ -57,25 +57,25 @@
                 <p>
                     <form method= "POST" action= "resultados.php">
                         <div class="form-check mb-3 text-start">
-                            <input class="form-check-input" type="radio" name="movie" id="Os Vingadores – The Avengers (2012)">
+                            <input class="form-check-input" type="radio" name="movie" id="Os Vingadores – The Avengers (2012)" value= "Os Vingadores – The Avengers (2012)">
                             <label class="form-check-label" for="flexRadioDefault1">
                                 Os Vingadores – The Avengers (2012)
                             </label>
                         </div>
                         <div class="form-check mb-3 text-start">
-                            <input class="form-check-input" type="radio" name="movie" id="Vingadores: Era de Ultron (2015)">
+                            <input class="form-check-input" type="radio" name="movie" id="Vingadores: Era de Ultron (2015)" value= "Vingadores: Era de Ultron (2015)">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Vingadores: Era de Ultron (2015)
                             </label>
                         </div>
                         <div class="form-check mb-3 text-start">
-                            <input class="form-check-input" type="radio" name="movie" id="Vingadores: Guerra Infinita (2018)">
+                            <input class="form-check-input" type="radio" name="movie" id="Vingadores: Guerra Infinita (2018)" value= "Vingadores: Guerra Infinita (2018)">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Vingadores: Guerra Infinita (2018)
                             </label>
                         </div>
                         <div class="form-check mb-3 text-start">
-                            <input class="form-check-input" type="radio" name="movie" id="Vingadores: Ultimato (2019)">
+                            <input class="form-check-input" type="radio" name="movie" id="Vingadores: Ultimato (2019)" value="Vingadores: Ultimato (2019)">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Vingadores: Ultimato (2019)
                             </label>

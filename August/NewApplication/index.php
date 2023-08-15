@@ -14,7 +14,7 @@
 </head>
 
 <body class="text-bg-light">
-    <div class="container text-center">
+    <div class="overflow-x-auto">
 
         <!-- Primeira linha -->
         <div class="row bg-primary">
@@ -69,21 +69,21 @@
 
                     <!-- Nome -->
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                        <label for="exampleFormControlInput1" class="form-label fw-bolder">Nome:</label>
                         <input type="nome" class="form-control" id="exampleFormControlInput1"
                             placeholder="Digite o seu nome completo">
                     </div>
 
                     <!-- Telefone -->
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Telefone:</label>
+                        <label for="exampleFormControlInput1" class="form-label fw-bolder">Telefone:</label>
                         <input type="nome" class="form-control" id="exampleFormControlInput1"
                             placeholder="(xx) xxxxx-xxxx">
                     </div>
 
                     <!-- Origem -->
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Origem</label>
+                        <label for="exampleFormControlInput1" class="form-label fw-bolder">Origem</label>
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Celular</option>
                             <option value="Fixo">Fixo</option>
@@ -96,19 +96,19 @@
 
                     <!-- Data do Contato -->
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Data do contato:</label>
+                        <label for="exampleFormControlInput1" class="form-label fw-bolder">Data do contato:</label>
                         <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="dd/mm/YYYY">
                     </div>
 
                     <!-- Text area -->
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <label for="exampleFormControlTextarea1" class="form-label fw-bolder">Example textarea</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
 
                     <!-- Botão -->
                     <div class="mb-3">
-                        <button type="button" class="btn btn-primary">Cadastar</button>
+                        <button type="button" class="btn btn-primary">Cadastrar</button>
                     </div>
 
                     <!-- Fim do formulário -->

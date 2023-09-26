@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+
+        /*
+                var n1 = 10;
+                var n2 = 2;
+        
+                var soma = n1 + n2;
+                var subtracao = n1 - n2;
+                var multiplicacao = n1 * n2;
+                var divisao = n1 / 2;
+                var potencia1 = n1 * n1;
+                var potencia2 = n2 * n2;
+        
+                console.log("Soma: " + soma);
+                console.log("Subtração: " + subtracao);
+                console.log("Multiplicação: " + multiplicacao);
+                console.log("Divisão: " + divisao);
+                console.log("Quadrado de 1: " + potencia1);
+                console.log("Quadrado de 2: " + potencia2);
+        
+                if(n1 > n2){
+                    console.log("O valor de N1 é maior do que N2");
+                }
+        
+                else{
+                    console.log("O valor de N2 é maior doi que N1");
+                }
+        
+            function validarDados(){
+        
+                //Campo nome:
+                if(document.getElementById("nome").value == ""){
+                    console.log("O campo nome está vazio!");
+                }
+        
+                else{
+                    var tamanho = document.getElementById("nome").value.length;
+                    //console.log("Tamanho: " + tamanho);
+        
+                    if(tamanho > 20){
+                        console.log("O campo nome está muito grande! \nTamanho do campo: " + tamanho);
+                    }
+                }
+        
+                //Campo endereço:
+                if(document.getElementById("endereco").value == ""){
+                    console.log("O campo endereço está vazio!");
+                }
+        
+                else{
+                    var tamanho = document.getElementById("endereco").value.length;
+                    //console.log("Tamanho: " + tamanho);
+        
+                    if(tamanho > 50){
+                        console.log("O campo endereço está muito grande! \nTamanho do campo: " + tamanho);
+                    }
+                }
+        
+                //Campo bairro:
+                if(document.getElementById("bairro").value == ""){
+                    console.log("O campo bairro está vazio!");
+                }
+        
+                else{
+                    var tamanho = document.getElementById("bairro").value.length;
+                    //console.log("Tamanho: " + tamanho);
+        
+                    if(tamanho > 50){
+                        console.log("O campo bairro está muito grande! \nTamanho do campo: " + tamanho);
+                    }
+                }
+        
+                //Campo CEP:
+                if(document.getElementById("cep").value == ""){
+                    console.log("O campo endereço está vazio!");
+                }
+        
+                else{
+        
+                    var valueCEP = document.getElementById('cep').value;
+        
+                    //Expressão regular para validar o formato do CEP (5 números, hífen, 3 números)
+                    var formatCEP = /^\d{5}-\d{3}$/;
+        
+                    }
+        
+                }
+        
+        
+        
+            }*/
+
+        function verificarCEP(cep) {
+
+            // Expressão regular para validar o formato do CEP (5 números, hífen, 3 números)
+            var regexCEP = /^\d{5}-\d{3}$/;
+            return regexCEP.test(cep);
+
+        }
+
+        function validarDados() {
+
+            // Campo nome:
+            var nome = document.getElementById("nome").value;
+
+            if (nome == "") {
+                console.log("O campo nome está vazio!");
+            }
+
+            else {
+                var tamanho = nome.length;
+                if (tamanho > 20) {
+                    console.log("O campo nome está muito grande!\nTamanho do campo: " + tamanho);
+                }
+            }
+
+            // Campo endereço:
+            var endereco = document.getElementById("endereco").value;
+
+            if (endereco == "") {
+                console.log("O campo endereço está vazio!");
+            }
+
+            else {
+                var tamanho = endereco.length;
+                if (tamanho > 50) {
+                    console.log("O campo endereço está muito grande!\nTamanho do campo: " + tamanho);
+                }
+            }
+
+            // Campo bairro:
+            var bairro = document.getElementById("bairro").value;
+
+            if (bairro == "") {
+                console.log("O campo bairro está vazio!");
+            }
+
+            else {
+                var tamanho = bairro.length;
+                if (tamanho > 50) {
+                    console.log("O campo bairro está muito grande!\nTamanho do campo: " + tamanho);
+                }
+            }
+
+            // Campo CEP:
+            var cep = document.getElementById("cep").value;
+
+            if (cep == "") {
+                console.log("O campo CEP está vazio!");
+            }
+
+            else if (!verificarCEP(cep)) {
+                console.log("O campo CEP não está no formato incorreto!");
+                var tamanho = cep.length;
+                if (tamanho > 10) {
+                    console.log("O tamanho do CEP está incorreto!");
+                }
+            }
+        }
+
+
+    </script>
+</head>
+
+<body id="square">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <div class="container text-center bg-body-tertiary">
+            <div class="row">
+                <div class="col-1">
+                    &nbsp;
+                </div>
+                <div class="col bg-primary">
+                    <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark"  id="navebar">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">SISTEMA WEB</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportContent" aria-controls="navbarSupportContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
+                                    &nbsp;
+                                    <a class="nav-link" href="#">Consultar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-1">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    &nbsp;
+                </div>
+                <div class="col bg-white">
+                    &nbsp;
+                </div>
+                <div class="col-1">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    &nbsp;
+                </div>
+                <div class="col bg-white">
+                    <p class="text-start fs-5"><b>Cadastrar - Cadastro de dados com JavaScript</b></p>
+                    <p>
+                    <form>
+                        <div class="mb-3 text-start">
+                            <label for="exampleInputEmail1" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" name="nome" id="nome" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="exampleInputEmail1" class="form-label">Endereço:</label>
+                            <input type="email" class="form-control" name="endereco" id="endereco"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="exampleInputEmail1" class="form-label">Bairro:</label>
+                            <input type="email" class="form-control" name="bairro" id="bairro"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="exampleInputEmail1" class="form-label">CEP:</label>
+                            <input type="email" class="form-control" name="cep" id="cep" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <!--<button type="button" name="cadastrar" id="cadastrar" onclick="validarDados()">Cadastrar</button>-->
+                            <button type="button" class="btn btn-primary" name="cadastrar" id="cadastrar"
+                                onclick="validarDados()">Cadastrar</button>
+                            <button type="button" class="btn btn-dark" onclick="doDemo(this);">Click Me</button>
+                        </div>
+
+
+                    </form>
+                    </p>
+                </div>
+                <div class="col-1">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+</body>
+<!--<form>
+
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Nome:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+          </div>
+        Nome:&nbsp;<input type="text" name="nome" id="nome"><br><br>
+        Endereço:&nbsp;<input type="text" name="endereco" id="endereco"><br><br>
+        Bairro:&nbsp;<input type="text" name="bairro" id="bairro"><br><br>
+        CEP:&nbsp;<input type="text" name="cep" id="cep"><br><br>
+
+        <button type="button" name="cadastrar" id="cadastrar" onclick="validarDados()">Cadastrar</button>
+    </form>-->
+
+</body>
+
+</html>

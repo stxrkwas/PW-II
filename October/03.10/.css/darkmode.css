@@ -1,0 +1,91 @@
+body{
+    background-color: #B2EBF2;
+    font-weight: lighter;
+    color: black;
+} 
+
+.dark {
+    background-color: #000000;
+    color: white; 
+}
+
+h2 {
+    font-size: 22pt;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    /* margin-top: 40px; */
+    /* margin-left: 120px; */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 16pt;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+ol li {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+ol#o1 {
+    margin-left: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14pt;
+}
+
+img {
+    width: 50%;
+    margin-left: 50px;
+    /* align: center; */
+}
+
+p#p1 {
+    text-align: justify;
+    margin-right: 550px;
+}
+
+p#p2 {
+    text-align: justify;
+    margin-right: 550px;
+    font-weight: lighter;
+}
+
+p#p3 {
+    text-align: justify;
+    margin-right: 550px;
+    font-weight: lighter;
+}
+
+p#p4 {
+    text-align: justify;
+    margin-right: 550px;
+    font-weight: lighter;
+}
+
+p#p5 {
+    text-align: justify;
+    margin-right: 550px;
+    font-weight: lighter;
+}
+
+p#p6 {
+    text-align: justify;
+    margin-right: 550px;
+    font-weight: lighter;
+}
+
+button{
+    margin-top: 20px;
+    margin-left: 1300px;
+    width: 150px;
+    padding: 15px;
+    background-color: #0d6efd;
+    color: #FFFFFF;
+    font-size: 10pt;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
